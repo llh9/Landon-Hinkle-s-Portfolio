@@ -7,7 +7,7 @@
       --secondary: gold;
       --dark: black;
       --light: white;
-      --medium: gray;
+      --medium: gray; 
   }
 /*background for entire page*/
 body {
@@ -22,7 +22,7 @@ header, header h1{
 header, header h1, nav a, .page-picture{
     border-bottom: solid;
     border-top: solid;
-    border-color: cyan;
+    border-color: var(--primary);
 }
 
 header{
@@ -36,28 +36,28 @@ header{
 }
 
 header h1, header nav, main h1, .work, h2{
-    background: radial-gradient(white, transparent);
+    background: radial-gradient(var(--light), transparent);
 }
 
 header h1{
-    color:gray;
-    border-color: cyan;
+    color:var(--medium);
+    border-color: var(--primary);
     font-size: 4.5vw;
 }
 
 header nav {
     padding-right: 20px;
-    color: gold;
+    color: var(--secondary);
 }
 
 nav a{
     font-size: 25px;
-    color: gray;
+    color: var(--medium);
 }
 
 nav a:hover{
-    color: black;
-    border-color: gray;
+    color: var(--dark);
+    border-color: var(--medium);
     background-repeat: no-repeat;
 }
 /*end of exclusive header styling */
@@ -75,11 +75,11 @@ nav a:hover{
 
 main, header h1{
     padding-left: 25px;
-    color: gray;
+    color: var(--medium);
 }
 
 main p{
-    color: black;
+    color: var(--dark);
 }
 
 .workFrame, .work{
@@ -91,7 +91,7 @@ main p{
 }
 
 .work{
-    border: 10px solid cyan;
+    border: 10px solid var(--primary);
     max-width: 35%;
     min-width:35%;
     min-height: 30vh;
@@ -107,11 +107,11 @@ main p{
 
 
 h3{
-    color: white
+    color: var(--light);
 }
 body, h3{
-    background: radial-gradient(ellipse at top, gold, transparent),
-    radial-gradient(ellipse at bottom, cyan, transparent);
+    background: radial-gradient(ellipse at top, var(--secondary), transparent),
+    radial-gradient(ellipse at bottom, var(--primary), transparent);
 }
 
 #horiseon {
