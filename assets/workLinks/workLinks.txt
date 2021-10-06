@@ -1,3 +1,4 @@
 fp		https://llh9.github.io/Primetime-P-FP/
 horiseon 	https://llh9.github.io/Horiseon-App/
 about me 	https://llh9.github.io/prework-about-me/
+resume 		file:///C:/Users/llh9/Resume-Page/index.html

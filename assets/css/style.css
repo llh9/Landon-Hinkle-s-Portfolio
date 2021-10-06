@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+/* global variable for site colors*/
 :root{
       --primary: cyan;
       --secondary: gold;
@@ -8,12 +9,10 @@
       --light: white;
       --medium: gray;
   }
-
+/*background for entire page*/
 body {
     margin: 0;
     padding: 0;
-    background: radial-gradient(ellipse at top, gold, transparent),
-    radial-gradient(ellipse at bottom, cyan, transparent);
 }
 
 header, header h1{
@@ -26,7 +25,7 @@ header, header h1, nav a, .page-picture{
     border-color: cyan;
 }
 
-header {
+header{
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -36,7 +35,7 @@ header {
 
 }
 
-header h1, header nav, main h1, .work{
+header h1, header nav, main h1, .work, h2{
     background: radial-gradient(white, transparent);
 }
 
@@ -61,7 +60,9 @@ nav a:hover{
     border-color: gray;
     background-repeat: no-repeat;
 }
+/*end of exclusive header styling */
 
+/**/
 .page-picture {
     display: flex;
     background-image: url(../images/Brain-Tap-3.jpg);
@@ -69,6 +70,8 @@ nav a:hover{
     min-height: 285px;
     min-width: 100vw;
 }
+
+/*style for the main content*/
 
 main, header h1{
     padding-left: 25px;
@@ -80,15 +83,57 @@ main p{
 }
 
 .workFrame, .work{
+    background-color: #69a994;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-#work1 {
     min-width: 100%;
 }
+
 .work{
-    max-width: 50%;
-    min-width: 50%;
+    border: 10px solid cyan;
+    max-width: 35%;
+    min-width:35%;
+    min-height: 30vh;
+    padding: 0 0 15px 0;
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+}
+
+
+h3{
+    color: white
+}
+body, h3{
+    background: radial-gradient(ellipse at top, gold, transparent),
+    radial-gradient(ellipse at bottom, cyan, transparent);
+}
+
+#horiseon {
+    min-width: 70%;
+    min-height: 40vh;
+    background-size: cover;
+}
+
+/*project background images*/
+#horiseon {
+    background-image: url(../images/Horiseon-App-Screenshot.PNG);
+}
+
+#about-me{
+    background-image: url(../images/prework-about-me-website-screenshot.PNG);
+}
+
+#ppfp{
+    background-image: url(../images/ppfp.PNG);
+
+}
+/*end of project background images*/
+#resume {
+
 }
