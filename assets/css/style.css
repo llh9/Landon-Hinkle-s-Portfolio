@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+:root{
+      --primary: cyan;
+      --secondary: gold;
+      --dark: black;
+      --light: white;
+      --medium: gray;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(ellipse at top, gold, transparent),
+    radial-gradient(ellipse at bottom, cyan, transparent);
+}
+
+header, header h1{
+    background-size: cover;
+}
+
+header, header h1, nav a, .page-picture{
+    border-bottom: solid;
+    border-top: solid;
+    border-color: cyan;
+}
+
+header {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+    max-height: 100px;
+
+}
+
+header h1, header nav, main h1, .work{
+    background: radial-gradient(white, transparent);
+}
+
+header h1{
+    color:gray;
+    border-color: cyan;
+    font-size: 4.5vw;
+}
+
+header nav {
+    padding-right: 20px;
+    color: gold;
+}
+
+nav a{
+    font-size: 25px;
+    color: gray;
+}
+
+nav a:hover{
+    color: black;
+    border-color: gray;
+    background-repeat: no-repeat;
+}
+
+.page-picture {
+    display: flex;
+    background-image: url(../images/Brain-Tap-3.jpg);
+    background-size: cover;
+    min-height: 285px;
+    min-width: 100vw;
+}
+
+main, header h1{
+    padding-left: 25px;
+    color: gray;
+}
+
+main p{
+    color: black;
+}
+
+.workFrame, .work{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#work1 {
+    min-width: 100%;
+}
+.work{
+    max-width: 50%;
+    min-width: 50%;
+}
