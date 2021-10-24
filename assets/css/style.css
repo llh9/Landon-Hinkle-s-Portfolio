@@ -4,9 +4,9 @@
 /* global variable for site colors*/
 :root{
       --primary: cyan;
-      --secondary: gold;
-      --dark: black;
-      --light: white;
+      --secondary: black;
+      --dark: white;
+      --light: gold;
       --medium: gray; 
   }
 /*background for entire page*/
@@ -53,6 +53,7 @@ header nav {
 nav a{
     font-size: 25px;
     color: var(--medium);
+    font-family: 'Orbitron', sans-serif;
 }
 
 nav a:hover{
@@ -64,11 +65,14 @@ nav a:hover{
 
 /**/
 .page-picture {
-    display: flex;
     background-image: url(../images/Brain-Tap-3.jpg);
     background-size: cover;
     min-height: 285px;
     min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
 }
 
 /*style for the main content*/
@@ -76,22 +80,38 @@ nav a:hover{
 main, header h1{
     padding-left: 25px;
     color: var(--medium);
+    font-family: 'Orbitron', sans-serif;
 }
 
 main p{
-    color: var(--dark);
+    color: var(--primary);
+    border-style: solid;
+    border-top: var(--primary);
+    border-bottom: var(--primary);
+    margin-right: 25px;
+}
+.workFrame a div h3{
+    border-radius: 25px;
+    border-style: solid;
+    border-color: gray;
 }
 
 .workFrame, .work{
-    background-color: #69a994;
+    background: radial-gradient(var(--dark), transparent);
     display: flex;
+
     flex-wrap: wrap;
     justify-content: center;
     min-width: 100%;
 }
+.workFrame{
+    border-style: solid;
+    border-top: var(--primary);
+    border-bottom: var(--primary);
+}
 
 .work{
-    border: 10px solid var(--primary);
+    border: 5px solid var(--dark);
     max-width: 35%;
     min-width:35%;
     min-height: 30vh;
@@ -105,13 +125,27 @@ main p{
 
 }
 
+button{
+    background-color: transparent;
+    width: 5%;
+    height: 15vh;
+    border-radius: 50%;
+    margin-left: 1%; ;
+    margin-top: 2vh;
+    border-color: var(--primary);
+}
+.resumeImg{
+    border-style: solid;
+    border-color: var(--primary);
+    border-width: 5px;
+}
 
 h3{
     color: var(--light);
 }
 body, h3{
     background: radial-gradient(ellipse at top, var(--secondary), transparent),
-    radial-gradient(ellipse at bottom, var(--primary), transparent);
+    radial-gradient(ellipse at bottom, var(--secondary), transparent);
 }
 
 #horiseon {
