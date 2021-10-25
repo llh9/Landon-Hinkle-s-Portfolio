@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
-<body>
+<body class="container ">
 
     <header>
         <h1>
@@ -28,11 +28,22 @@
     </header>
 
     <section class="page-picture">
-        <button type="button"></button>
+        <div class="row toggle container">
+            <div class="col">
+              <p style="color: black;">DARK MODE</p>
+            </div>
+            <label class="switch col">
+              <input type="checkbox" id="theme-switcher">
+              <span class="slider round"></span>
+            </label>
+            <div class="col">
+              <p>LIGHT MODE</p>
+            </div>
+          </div>
     </section>
 
     <main>
-        <section id="about-me about-meSection">
+        <section  id="about-me about-meSection">
             <h1>About Me</h1>
             <p> 
                 Helvetica put a bird on it church-key Blue Bottle banjo bespoke brunch Etsy authentic Marfa quinoa typewriter plaid direct trade small batch wayfarers bicycle rights cliche craft beer gastropub single-origin coffee Godard Carles you probably haven't heard of them irony pickled kitsch synth sriracha gentrify literally heirloom blog Truffaut paleo scenester
@@ -43,13 +54,14 @@
         </section>
 
         <section id="work">
-                <h2>Work</h2>
+
+            <h2>Work</h2>
 
             <div class="workFrame"> 
 
-                <a href="https://llh9.github.io/Horiseon-App/" target="_blank" class="work" id="horiseon">
+                <a href="https://llh9.github.io/Horiseon-App/" target="_blank" class="work" id="Planmark">
                     <div>
-                        <h3>Horiseon Marketing Web Page</h3>
+                        <h3>Planmark, Group Project</h3>
                     </div>
                 </a>
 
