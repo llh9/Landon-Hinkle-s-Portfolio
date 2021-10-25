@@ -97,7 +97,7 @@ main p{
 }
 
 .workFrame, .work{
-    background: radial-gradient(var(--dark), transparent);
+    background: radial-gradient(transparent, var(--dark));
     display: flex;
 
     flex-wrap: wrap;
@@ -105,11 +105,8 @@ main p{
     min-width: 100%;
 }
 .workFrame{
-    border-style:solid;
-    border-width: 4px;
-    border-color: var(--light);
     margin-right: 75px;
-    background: radial-gradient(ellipse at top, var(--secondary), transparent),
+    background: radial-gradient(ellipse at top,transparent,  var(--secondary),),
     radial-gradient(ellipse at bottom, var(--secondary),transparent);
 }
 
@@ -130,6 +127,9 @@ main p{
 }
 
 .toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-family: 'Orbitron', sans-serif;
     border-style: outset;
     width: 400px;
@@ -233,12 +233,13 @@ main p{
   
 .resumeImg{
     border-style: solid;
-    border-color: rgb(36, 79, 36);
+    border-color: var(--dark);
     border-width: 5px;
+    border-radius: 20%;
 }
 
 h3{
-    color: var(--light);
+    color: white;
 }
 body, h3{
     background: radial-gradient(ellipse at top, var(--secondary), transparent),
